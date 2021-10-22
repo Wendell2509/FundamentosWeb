@@ -25,9 +25,12 @@ function validaNome(){
 }
 
 function validaEmail(){
+
+    const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
     let txt = document.getElementById("txtEmail")
 
-    if (!email.value.includes('@') || !email.value.includes('.')) {
+    if (!email.value.match(mailformat)){
         txt.innerHTML = "campo invalido"
         txt.style.color = "red"
         emailOk = false
