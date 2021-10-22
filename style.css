@@ -108,3 +108,9 @@ footer {
 #endereco-content{
   text-align: center;
 }
+
+#mapa{
+  transition: 0.5s ease-in-out;
+  border-radius: 5%;
+}
+
